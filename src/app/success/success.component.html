@@ -1,0 +1,8 @@
+<div>
+    <div class="notification-button">
+        <button class="btn btn-success" (click)="changeVisibility()">{{ isVisible == true ? 'Hide' : 'Show' }}</button>
+    </div>
+    <div *ngIf="isVisible">
+        <p>Avocado</p>
+    </div>
+</div>
